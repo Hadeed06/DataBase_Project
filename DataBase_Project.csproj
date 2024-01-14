@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4EBA5DD8-5C80-49A9-99D7-D62989961CC0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DataBase_Project</RootNamespace>
+    <AssemblyName>DataBase_Project</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Administrator_signup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator_signup.Designer.cs">
+      <DependentUpon>Administrator_signup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_interface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_interface.Designer.cs">
+      <DependentUpon>Admin_interface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Approve_Thesis_PM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Approve_Thesis_PM.Designer.cs">
+      <DependentUpon>Approve_Thesis_PM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Comments_student.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Comments_student.Designer.cs">
+      <DependentUpon>Comments_student.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Deletetion_by_admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Deletetion_by_admin.Designer.cs">
+      <DependentUpon>Deletetion_by_admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PanelMember_interface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PanelMember_interface.Designer.cs">
+      <DependentUpon>PanelMember_interface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PanelMember_signup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PanelMember_signup.Designer.cs">
+      <DependentUpon>PanelMember_signup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PanelM_Review.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PanelM_Review.Designer.cs">
+      <DependentUpon>PanelM_Review.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PanelM_view_thesis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PanelM_view_thesis.Designer.cs">
+      <DependentUpon>PanelM_view_thesis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reject_thesis_PM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reject_thesis_PM.Designer.cs">
+      <DependentUpon>Reject_thesis_PM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="signUp1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="signUp1.Designer.cs">
+      <DependentUpon>signUp1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student_data_for_supervisor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student_data_for_supervisor.Designer.cs">
+      <DependentUpon>Student_data_for_supervisor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student_Details_For_Admin .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student_Details_For_Admin .Designer.cs">
+      <DependentUpon>Student_Details_For_Admin .cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student_interface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student_interface.Designer.cs">
+      <DependentUpon>Student_interface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student_signup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student_signup.Designer.cs">
+      <DependentUpon>Student_signup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="student_view_reviews.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="student_view_reviews.Designer.cs">
+      <DependentUpon>student_view_reviews.cs</DependentUpon>
+    </Compile>
+    <Compile Include="submit_proposal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="submit_proposal.Designer.cs">
+      <DependentUpon>submit_proposal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Suoervisor_interface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Suoervisor_interface.Designer.cs">
+      <DependentUpon>Suoervisor_interface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Suopervisor_review.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Suopervisor_review.Designer.cs">
+      <DependentUpon>Suopervisor_review.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Supervisor_signup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supervisor_signup.Designer.cs">
+      <DependentUpon>Supervisor_signup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Thesis_view_by_supervisor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Thesis_view_by_supervisor.Designer.cs">
+      <DependentUpon>Thesis_view_by_supervisor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Update_thesis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update_thesis.Designer.cs">
+      <DependentUpon>Update_thesis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View Reviews and Panel Members for Each Thesis Proposal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View Reviews and Panel Members for Each Thesis Proposal.Designer.cs">
+      <DependentUpon>View Reviews and Panel Members for Each Thesis Proposal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View_data_Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View_data_Admin.Designer.cs">
+      <DependentUpon>View_data_Admin.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Administrator_signup.resx">
+      <DependentUpon>Administrator_signup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_interface.resx">
+      <DependentUpon>Admin_interface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Approve_Thesis_PM.resx">
+      <DependentUpon>Approve_Thesis_PM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Comments_student.resx">
+      <DependentUpon>Comments_student.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Deletetion_by_admin.resx">
+      <DependentUpon>Deletetion_by_admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelMember_interface.resx">
+      <DependentUpon>PanelMember_interface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelMember_signup.resx">
+      <DependentUpon>PanelMember_signup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelM_Review.resx">
+      <DependentUpon>PanelM_Review.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelM_view_thesis.resx">
+      <DependentUpon>PanelM_view_thesis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Reject_thesis_PM.resx">
+      <DependentUpon>Reject_thesis_PM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="signUp1.resx">
+      <DependentUpon>signUp1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student_data_for_supervisor.resx">
+      <DependentUpon>Student_data_for_supervisor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student_Details_For_Admin .resx">
+      <DependentUpon>Student_Details_For_Admin .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student_interface.resx">
+      <DependentUpon>Student_interface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student_signup.resx">
+      <DependentUpon>Student_signup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="student_view_reviews.resx">
+      <DependentUpon>student_view_reviews.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="submit_proposal.resx">
+      <DependentUpon>submit_proposal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Suoervisor_interface.resx">
+      <DependentUpon>Suoervisor_interface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Suopervisor_review.resx">
+      <DependentUpon>Suopervisor_review.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supervisor_signup.resx">
+      <DependentUpon>Supervisor_signup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Thesis_view_by_supervisor.resx">
+      <DependentUpon>Thesis_view_by_supervisor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update_thesis.resx">
+      <DependentUpon>Update_thesis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View Reviews and Panel Members for Each Thesis Proposal.resx">
+      <DependentUpon>View Reviews and Panel Members for Each Thesis Proposal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_data_Admin.resx">
+      <DependentUpon>View_data_Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pcit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Leonardo_Diffusion_XL_Generate_a_vibrant_and_inspiring_backgro_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Student_interface.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\supervisor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\street_vie_of_city_destroyed.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7ab09801be61c05e23795d7c2034da7e %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\supervisor1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
